@@ -10,11 +10,10 @@ import AsyncDisplayKit
 
 internal final class TextureViewController: ASDKViewController<ASCollectionNode>, ASCollectionDataSource, ASCollectionDelegate {
     
-    let flowLayout: UICollectionViewFlowLayout
-    let collectionNode: ASCollectionNode
+    private var flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    private let collectionNode: ASCollectionNode
     
     override internal init() {
-        flowLayout = UICollectionViewFlowLayout()
         collectionNode = ASCollectionNode(collectionViewLayout: flowLayout)
         
         super.init(node: collectionNode)
@@ -23,28 +22,29 @@ internal final class TextureViewController: ASDKViewController<ASCollectionNode>
         collectionNode.dataSource = self
     }
     
-    @available(*, unavailable)
-    required init?(coder aDecoder: NSCoder) {
+    internal required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        node.view.backgroundColor = .white
+        
         let size = floor(collectionNode.frame.width / 4)
         flowLayout.itemSize = CGSize(width: size, height: size)
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
     }
     
-    func numberOfSections(in collectionNode: ASCollectionNode) -> Int {
+    internal func numberOfSections(in collectionNode: ASCollectionNode) -> Int {
         return 1
     }
     
-    func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -> Int {
+    internal func collectionNode(_ collectionNode: ASCollectionNode, numberOfItemsInSection section: Int) -> Int {
         return 3000
     }
     
-    func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
+    internal func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
         return { () -> ASCellNode in
             let cellNode = TextureCollectionViewCell()
             cellNode.imageView.image = ImageDelayer().getDelayedImage()
@@ -53,17 +53,17 @@ internal final class TextureViewController: ASDKViewController<ASCollectionNode>
     }
 }
 
-final class TextureCollectionViewCell: ASCellNode {
+internal final class TextureCollectionViewCell: ASCellNode {
     
-    let imageView = ASImageNode()
+    internal let imageView = ASImageNode()
     
-    override init() {
+    override internal init() {
         super.init()
         imageView.contentMode = .scaleAspectFill
         addSubnode(imageView)
     }
     
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+    override internal func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         return ASWrapperLayoutSpec(layoutElement: imageView)
     }
 }

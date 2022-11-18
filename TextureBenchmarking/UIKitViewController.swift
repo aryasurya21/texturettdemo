@@ -14,8 +14,6 @@ internal final class UIKitViewController: UIViewController {
     private var collectionView: UICollectionView? = nil
     private let screen = UIScreen.main.bounds
     
-  
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -61,14 +59,14 @@ extension UIKitViewController: UICollectionViewDataSource {
 extension UIKitViewController: UICollectionViewDelegate {
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UIKitCollectionViewCell", for: indexPath) as! UIKitCollectionViewCell
-        cell.setImage(image: ImageDelayer().getDelayedImage())
+        cell.imageView.image = ImageDelayer().getDelayedImage()
         return cell
     }
 }
 
 final class UIKitCollectionViewCell: UICollectionViewCell {
     
-    private let imageView: UIImageView = UIImageView()
+    internal var imageView: UIImageView = UIImageView()
     
     override internal init(frame: CGRect) {
         self.imageView.frame = CGRect(x: 0, y: 0, width: 103, height: 103)
@@ -79,10 +77,5 @@ final class UIKitCollectionViewCell: UICollectionViewCell {
     
     required internal init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    public func setImage(image: UIImage){
-        self.imageView.image = image
-        self.imageView.setNeedsLayout()
     }
 }
