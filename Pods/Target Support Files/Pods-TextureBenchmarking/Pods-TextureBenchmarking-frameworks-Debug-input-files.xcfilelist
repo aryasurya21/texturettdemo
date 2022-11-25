@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-TextureBenchmarking/Pods-TextureBenchmarking-frameworks.sh
-${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
-${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
-${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework
-${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework
-${BUILT_PRODUCTS_DIR}/WatchdogInspector/WatchdogInspector.framework
