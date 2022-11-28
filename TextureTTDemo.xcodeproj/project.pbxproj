@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18B6BDF450F7E462685324DD /* Pods_TextureTTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4DC68272A8E1416D53EAD9 /* Pods_TextureTTDemo.framework */; };
+		2B1DF9C12934FBFC004EC0EC /* LiveRoomButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DF9C02934FBFC004EC0EC /* LiveRoomButtonModel.m */; };
+		2B1DF9C32934FC42004EC0EC /* LiveRoomTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DF9C22934FC42004EC0EC /* LiveRoomTagModel.m */; };
 		2B82810E292751C2007E18F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82810D292751C2007E18F4 /* AppDelegate.swift */; };
 		2B828110292751C2007E18F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82810F292751C2007E18F4 /* SceneDelegate.swift */; };
 		2B828117292751C4007E18F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B828116292751C4007E18F4 /* Assets.xcassets */; };
@@ -16,10 +18,17 @@
 		2BDB96B329309276004AD20E /* LiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB96B229309276004AD20E /* LiveCollectionViewCell.m */; };
 		2BDB96BA293098D0004AD20E /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB96B9293098D0004AD20E /* DemoViewController.m */; };
 		2BDB96BD29309942004AD20E /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB96BC29309942004AD20E /* EntryViewController.m */; };
+		2BE41FD22934EE0300A21341 /* DataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE41FD12934EE0300A21341 /* DataGenerator.m */; };
+		2BE41FD62934EE3200A21341 /* LiveRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE41FD52934EE3200A21341 /* LiveRoomModel.m */; };
+		2BE421F92934F01700A21341 /* LiveHostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE421F82934F01700A21341 /* LiveHostModel.m */; };
+		2BE421FB2934F0AB00A21341 /* LiveViewerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE421FA2934F0AB00A21341 /* LiveViewerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1220D7DF704074D2890C5293 /* Pods-TextureTTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureTTDemo.debug.xcconfig"; path = "Target Support Files/Pods-TextureTTDemo/Pods-TextureTTDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2B1DF9BF2934FAE3004EC0EC /* LiveViewerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewerModel.h; sourceTree = "<group>"; };
+		2B1DF9C02934FBFC004EC0EC /* LiveRoomButtonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRoomButtonModel.m; sourceTree = "<group>"; };
+		2B1DF9C22934FC42004EC0EC /* LiveRoomTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRoomTagModel.m; sourceTree = "<group>"; };
 		2B82810A292751C2007E18F4 /* TextureTTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureTTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B82810D292751C2007E18F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B82810F292751C2007E18F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +44,15 @@
 		2BDB96B9293098D0004AD20E /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		2BDB96BB29309938004AD20E /* EntryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
 		2BDB96BC29309942004AD20E /* EntryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
+		2BE41FD12934EE0300A21341 /* DataGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataGenerator.m; sourceTree = "<group>"; };
+		2BE41FD32934EE0C00A21341 /* DataGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataGenerator.h; sourceTree = "<group>"; };
+		2BE41FD52934EE3200A21341 /* LiveRoomModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRoomModel.m; sourceTree = "<group>"; };
+		2BE41FD72934EE3C00A21341 /* LiveRoomModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRoomModel.h; sourceTree = "<group>"; };
+		2BE421F72934F00800A21341 /* LiveHostModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveHostModel.h; sourceTree = "<group>"; };
+		2BE421F82934F01700A21341 /* LiveHostModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveHostModel.m; sourceTree = "<group>"; };
+		2BE421FA2934F0AB00A21341 /* LiveViewerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewerModel.m; sourceTree = "<group>"; };
+		2BE421FD2934F19000A21341 /* LiveRoomTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRoomTagModel.h; sourceTree = "<group>"; };
+		2BE421FE2934F29700A21341 /* LiveRoomButtonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRoomButtonModel.h; sourceTree = "<group>"; };
 		65DEE71FF7B93DDFB1E2FDDB /* Pods-TextureTTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureTTDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureTTDemo/Pods-TextureTTDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9A4DC68272A8E1416D53EAD9 /* Pods_TextureTTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureTTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +90,8 @@
 		2B82810C292751C2007E18F4 /* TextureTTDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BE41FD42934EE2400A21341 /* Model */,
+				2BE41FD02934ED9900A21341 /* Helper */,
 				2BDB96B729309878004AD20E /* Demo */,
 				2BDB96B629309871004AD20E /* Feature */,
 				2B82810D292751C2007E18F4 /* AppDelegate.swift */,
@@ -104,6 +124,32 @@
 				2BDB96B9293098D0004AD20E /* DemoViewController.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		2BE41FD02934ED9900A21341 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2BE41FD12934EE0300A21341 /* DataGenerator.m */,
+				2BE41FD32934EE0C00A21341 /* DataGenerator.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2BE41FD42934EE2400A21341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BE41FD52934EE3200A21341 /* LiveRoomModel.m */,
+				2BE41FD72934EE3C00A21341 /* LiveRoomModel.h */,
+				2BE421F72934F00800A21341 /* LiveHostModel.h */,
+				2BE421F82934F01700A21341 /* LiveHostModel.m */,
+				2BE421FA2934F0AB00A21341 /* LiveViewerModel.m */,
+				2BE421FD2934F19000A21341 /* LiveRoomTagModel.h */,
+				2BE421FE2934F29700A21341 /* LiveRoomButtonModel.h */,
+				2B1DF9BF2934FAE3004EC0EC /* LiveViewerModel.h */,
+				2B1DF9C02934FBFC004EC0EC /* LiveRoomButtonModel.m */,
+				2B1DF9C22934FC42004EC0EC /* LiveRoomTagModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5716902D844FCB5D0996133D /* Pods */ = {
@@ -238,12 +284,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE41FD62934EE3200A21341 /* LiveRoomModel.m in Sources */,
 				2BA201EA292B6689002061F3 /* ViewController.m in Sources */,
 				2BDB96BD29309942004AD20E /* EntryViewController.m in Sources */,
 				2BDB96B329309276004AD20E /* LiveCollectionViewCell.m in Sources */,
+				2BE421F92934F01700A21341 /* LiveHostModel.m in Sources */,
+				2BE41FD22934EE0300A21341 /* DataGenerator.m in Sources */,
 				2B82810E292751C2007E18F4 /* AppDelegate.swift in Sources */,
 				2BDB96BA293098D0004AD20E /* DemoViewController.m in Sources */,
 				2B828110292751C2007E18F4 /* SceneDelegate.swift in Sources */,
+				2B1DF9C12934FBFC004EC0EC /* LiveRoomButtonModel.m in Sources */,
+				2BE421FB2934F0AB00A21341 /* LiveViewerModel.m in Sources */,
+				2B1DF9C32934FC42004EC0EC /* LiveRoomTagModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
