@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-@interface DemoViewController : UIViewController
+@interface DemoViewController : ASDKViewController<ASDisplayNode *>
 
 @end

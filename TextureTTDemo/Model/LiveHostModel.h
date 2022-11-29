@@ -11,5 +11,7 @@
 
 @property (nonatomic, copy) NSString* hostAvatarURL;
 @property (nonatomic, copy) NSString* hostName;
+@property (nonatomic, copy) NSString* currentRoomLike;
+@property (nonatomic, assign) BOOL isFollowHost;
 
 @end

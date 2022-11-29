@@ -13,8 +13,6 @@
 @interface LiveRoomModel : NSObject
 
 @property (nonatomic, strong) LiveHostModel *hostData;
-@property (nonatomic, assign) BOOL isFollowHost;
-@property (nonatomic, assign) NSInteger totalLike;
 @property (nonatomic, strong) NSURL* contentURL;
 @property (nonatomic, strong) NSMutableArray<LiveRoomTagModel*> *roomTags;
 @property (nonatomic, strong) NSArray<LiveViewerModel*> *viewerData;
