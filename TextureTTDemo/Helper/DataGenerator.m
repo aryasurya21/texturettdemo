@@ -15,6 +15,7 @@
     firstRoom.hostData = [DataGenerator generateDummyHostForIndex:0];
     NSString *firstVideoPath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
     firstRoom.contentURL = [NSURL fileURLWithPath:firstVideoPath];
+    firstRoom.totalLike = 50;
     firstRoom.buttons = [DataGenerator generateDummyButtons];
     firstRoom.roomTags = [DataGenerator generateDummyTags];
     firstRoom.viewerData = [DataGenerator generateDummyViewers];
@@ -23,6 +24,7 @@
     secondRoom.hostData = [DataGenerator generateDummyHostForIndex:1];
     NSString *secondVideoPath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
     secondRoom.contentURL = [NSURL fileURLWithPath:secondVideoPath];
+    secondRoom.totalLike = 50;
     secondRoom.buttons = [DataGenerator generateDummyButtons];
     secondRoom.roomTags = [DataGenerator generateDummyTags];
     secondRoom.viewerData = [DataGenerator generateDummyViewers];
