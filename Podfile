@@ -7,4 +7,5 @@ target 'TextureTTDemo' do
 
   # Pods for TextureTTDemo
   pod "Texture"
+  pod "WatchdogInspector"
 end

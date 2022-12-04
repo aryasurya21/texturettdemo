@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "EntryViewController.h"
 #import "DemoViewController.h"
-#import "ViewController.h"
+
+#import <TextureTTDemo-Swift.h>
 
 @interface EntryViewController ()
 
@@ -29,9 +30,9 @@
         [self.demoButton addTarget:self action:@selector(navigateToDemo) forControlEvents:UIControlEventTouchUpInside];
         
         self.featureButton = [[UIButton alloc] init];
-        [self.featureButton setTitle:@"Feature" forState:UIControlStateNormal];
+        [self.featureButton setTitle:@"Benchmark" forState:UIControlStateNormal];
         [self.featureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [self.featureButton addTarget:self action:@selector(navigateToFeature) forControlEvents:UIControlEventTouchUpInside];
+        [self.featureButton addTarget:self action:@selector(navigateToBenchmark) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
@@ -58,8 +59,8 @@
     [self.navigationController pushViewController:demoController animated:YES];
 }
 
-- (void)navigateToFeature {
-    ViewController *viewController = [[ViewController alloc] init];
+- (void)navigateToBenchmark {
+    BenchmarkViewController *viewController = [[BenchmarkViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

@@ -21,7 +21,7 @@
     
     LiveRoomModel *secondRoom = [[LiveRoomModel alloc] init];
     secondRoom.hostData = [DataGenerator generateDummyHostForIndex:1];
-    NSString *secondVideoPath = [[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mp4"];
+    NSString *secondVideoPath = [[NSBundle mainBundle] pathForResource:@"video2" ofType:@"mp4"];
     secondRoom.contentURL = [NSURL fileURLWithPath:secondVideoPath];
     secondRoom.buttons = [DataGenerator generateDummyButtons];
     secondRoom.roomTags = [DataGenerator generateDummyTags];

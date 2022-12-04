@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WatchdogInspector
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,6 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         self.window?.rootViewController = UINavigationController(rootViewController: EntryViewController())
     
+        TWWatchdogInspector.setEnableMainthreadStallingException(false);
+        TWWatchdogInspector.start()
+        
         self.window?.makeKeyAndVisible()
     }
 
