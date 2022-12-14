@@ -86,7 +86,7 @@
 
 + (NSArray<LiveViewerModel *> *)generateDummyViewers {
     LiveViewerModel *viewer = [[LiveViewerModel alloc] init];
-    viewer.viewerAvatarURL = @"viewer";
+    viewer.viewerAvatarURL = @"user_viewer";
     
     return @[viewer];
 }
