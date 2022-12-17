@@ -8,6 +8,6 @@
 #import <UIKit/UIKit.h>
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 
-@interface DemoViewController : ASDKViewController<ASDisplayNode *>
+@interface DemoViewController : UIViewController
 
 @end
